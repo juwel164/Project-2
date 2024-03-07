@@ -1,0 +1,315 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/***************************************** Header Area  ****************************************/
+
+/****************** Navbar  ******************/
+
+html, body, header{
+  width: 100%;
+  height: 100%;
+  clear: both;
+}
+.navbar_area{
+  display: flex;
+  justify-content: space-between;
+  padding: 4vw 0;
+}
+.navbar_area .nav_btn{
+  border: none;
+  outline: none;
+  display: none;
+  background-color: transparent;
+}
+.navbar_area .nav_btn img{
+  width: 40px;
+}
+
+.navbar_area .logo_area{
+  margin-left: 13vw;
+}
+.navbar_area .logo_area .img1{
+  width: 40px;
+}
+.navbar_area .logo_area .img2{
+  width: 100px;
+  margin-left: 0.7vw;
+}
+.navbar_area .menu_area{
+  margin-right: 10vw;
+}
+.menu_area ul li a{
+  color: #000;
+  margin-right: 1vw;
+  margin-right: 1vw;
+}
+.menu_area ul .cv_btn{
+  background-color: #FD6F00;
+  color: #fff;
+  margin-right: 3vw;
+}
+
+@media all and (max-width:992px){
+  .navbar_area .nav_btn{
+    display: block;
+  }
+  
+.navbar_area{
+  padding-left: 5vw;
+  padding-top: 2vw;
+}
+.navbar_area .logo_area{
+  margin-left: -2vw;
+}
+.navbar_area .nav_btn{
+  margin-right: 1vw;
+}
+}
+
+/****************** Hero Section  ******************/
+
+.hero_section{
+  width: 100%;
+  height: calc(100% - 141px);
+  display: flex;
+  clear: both;
+
+}
+.left_content{
+  width: 60%;
+  height: 100%;
+  padding-top: 5vw;
+  padding-left: 13vw;
+  clear: both;
+}
+.left_content h1{
+  font-weight: 700;
+  font-size: 4.5vw;
+}
+.left_content h6{
+  margin-bottom: 1.2vw;
+  font-size: 13px;
+}
+.left_content h5{
+  color: #FD6F00;
+  line-height: 3px;
+}
+.left_content .hero_h1{
+  margin-left: 6.5vw;
+  margin-top: -1vw;
+}
+.left_content p{
+  font-size: 1vw;
+  width: 75%;
+  margin-top: 1.5vw;
+}
+.left_content .hero_btn{
+  background-color: #FD6F00;
+  color: #fff;
+  padding: 0.2vw 2vw;
+  font-size: 14px;
+}
+.right_content{
+  width: 40%;
+  height: 100%;
+}
+.right_top_content{
+  width: 100%;
+  height: 100%;
+  clear: both;
+
+}
+.right_top_content img{
+  width: 60%;
+  margin-left: 5vw;
+  margin-top: 1vw;
+
+}
+.social{
+  width: 40%;
+  display: flex;
+  justify-content: left;
+  margin-left: 11vw;
+}
+.social img{
+  width: 1.6vw;
+  margin-left: 1vw;
+  cursor: pointer;
+}
+
+@media (max-width:600px) {
+  
+.hero_section{
+  display: flex;
+  flex-direction: column;
+}
+.left_content{
+  width: 100%;
+}
+.right_content{
+  margin-top: 10vw;
+  width: 100%;
+}
+.left_content .hero_btn{
+  padding: 1.5vw 5.5vw;
+}
+.right_top_content img{
+  margin-left: 10vw;
+  width: 80%;
+}
+.social{
+  margin-left: 15vw;
+}
+.left_content h6{
+  margin-bottom: 3vw;
+}
+.left_content h1{
+  font-size: 12vw;
+}
+.left_content h5{
+  font-size: 18px;
+}
+.left_content .hero_h1{
+  margin-left: 10vw;
+}
+.left_content p{
+  font-size: 14px;
+  width: 90%;
+}
+}
+
+/***************************************** Content Area  ****************************************/
+
+
+/****************** About Me Section  ******************/
+
+
+.content{
+  width: 100%;
+  height: 100%;
+}
+.aboout_me_section{
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.about_left_content{
+  width: 45%;
+  height: 100%;
+}
+.about_left_content img{
+  width: 60%;
+  margin-left: 10vw;
+}
+
+.about_right_content{
+  width: 55%;
+  height: 100%;
+}
+.about_right_content h1{
+
+}
+.about_right_content p{
+  width: 63%;
+  font-size: 1vw;
+}
+
+.progress_bar{
+  width: 78%;
+}
+.progress_bar h6{
+  font-size: 1vw;
+  margin-bottom: -1.5vw;
+  margin-top: 1.5vw;
+}
+.progress_bar .progress{
+  margin-top: 2vw;
+}
+.progress_bar .progress{
+  height: .7vw;
+}
+
+.progress_bar .progress .progress-bar{
+  background-color: #FD6F00;
+  height: .7vw;
+}
+
+@media (max-width:600px) {
+  .aboout_me_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about_left_content{
+    width: 400px;
+    height: 100px;
+  }
+  .about_left_content img{
+    display: none;
+  }
+
+  .about_right_content{
+    width: 100%;
+    top: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  .about_right_content h1{
+    font-size: 9vw;
+  }
+  .about_right_content p{
+    font-size: 14px;
+    width: 80%;
+  }
+  .progress_bar{
+    width: 78%;
+  }
+  .progress_bar .progress{
+    height: 2vw;
+  }
+  .progress_bar .progress .progress-bar{
+    height: 2vw;
+  }
+  .progress_bar h6{
+    font-size: 14px;
+  }
+}
+
+
+
+/************ Servince section ************* */
+
+.card img{
+  width: 50px;
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.services_section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8vw;
+}
+
+.services_section{
+  width: 100%;
+  height: 100%;
+}
+.services_section .service_text{
+  font-size: 1vw;
+  text-align: center;
+  margin: 10px 0 40px 0;
+}
+.card{
+  background-color: #F8F8F8;
+  border: none;
+}
